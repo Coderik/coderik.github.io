@@ -1,16 +1,17 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+permalink: 			 /blog/:year/:month/:day/:title
 # relative_permalinks: true		# not supported in Jekyll >= 3.0
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
+title:               TBD
+tagline:             'Scattered Technical Notes'
+description:         'Watchout! Work is still in progress here.'
+url:                 http://127.0.0.1:4000/
 baseurl:             ''
 paginate:            5
+excerpt_separator:   <!--more-->
 
 # About/contact
 author:
@@ -19,6 +20,6 @@ author:
   email:             markdotto@gmail.com
 
 # Custom vars
-version:             1.0.0
+version:             0.1.0
 
 gems: 				 [jekyll-paginate]
