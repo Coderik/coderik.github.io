@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up Nginx + uWSGI + Flask"
 date:   2016-08-23 14:55:00 +0200
-categories: jekyll update
+categories: nginx flask
 ---
 This is just a brief note on how to setup Nginx + uWSGI + Flask on a freshly installed Ubuntu server.
 We are going to start from uWSGI, then add Flask, and finally install and configure Nginx web server. 
