@@ -4,7 +4,7 @@ title:  "Voice messages with python-telegram-bot"
 date:   2016-08-28 11:10:00 +0200
 categories: telegram python
 ---
-Recently I was playing around with the Telegram's Bot API using the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library. I have faced a small but curious issue. Let's say that we want to sent an mp3 file to a Telegram chat. We have two options here: either send the file as a voice message or as a general file. In the first case the audio should be playable right through any Telegram client, while in the second case a user should be able to download it. With python-telegram-bot this can be done via methods Bot.sendVoice and Bot.sendDocument.
+Recently I was playing around with the Telegram's Bot API using the [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library. I have faced a small but curious issue. Let's say that we want to send an mp3 file to a Telegram chat. We have two options here: either send the file as a voice message or as a general file. In the first case the audio should be playable right through any Telegram client, while in the second case a user should be able to download it. With python-telegram-bot this can be done via methods Bot.sendVoice and Bot.sendDocument.
 
 By the way, for the web client both options seem to be equal at a first sight: a user has *Download* and *Play* links in either case. However, when we send an audio as a voice message, it gets wrapped in the mpeg container, and that is what our user downloads.
 
@@ -153,3 +153,5 @@ song_filename = somehow_extract_name_from_url(song_url)
 voice = BufferWithName(song_response.content, song_filename)
 bot.sendVoice(chat_id, voice=voice)
 {% endhighlight %}
+
+Another option would be to wrap BytesIO in io.BufferedReader which has *name* attribute. 
