@@ -7,17 +7,17 @@ permalink: 			 /blog/:year/:month/:day/:title
 # Setup
 title:               TBD
 tagline:             'Scattered Technical Notes'
-description:         'Watchout! Work is still in progress here.'
-url:                 http://127.0.0.1:4000/
+description:         'This is a collection of scattered technical notes on various topics.'
+url:                 https://coderik.github.io/
 baseurl:             ''
 paginate:            5
 excerpt_separator:   <!--more-->
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Coderik
+  url:               https://twitter.com/Coderik
+  email:             coderiks@gmail.com
 
 # Custom vars
 version:             0.1.0
